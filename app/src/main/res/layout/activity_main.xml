@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/TelaRGB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TelaRGBMudarCor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minhapratica02"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/BarraVermelha"
+            android:max="255"
+            android:progress="0"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progressTint="#F00"
+            android:thumbTint = "#F00"/>
+
+    </LinearLayout>
+
+    //********
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/BarraVerde"
+            android:max="255"
+            android:progress="0"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progressTint="#0F0"
+            android:thumbTint = "#0F0"/>
+
+    </LinearLayout>
+
+    //********
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <SeekBar
+            android:id="@+id/BarraAzul"
+            android:max="255"
+            android:progress="0"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progressTint="#00F"
+            android:thumbTint = "#00F"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
